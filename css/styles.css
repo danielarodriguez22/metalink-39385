@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family:'montserrat'; 
+    text-decoration: none;
+    font-size: 18;
+    list-style: none;
+}
+
+.index {
+
+background-image: url(../assets/img/Slider.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+.slider {
+    background-image: url(../assets/img/realidad-virtual.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Esto modifica Barra de Navegacion*/
+
+header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 140px;
+    padding-right: 20px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.header .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-decoration: none;
+    font-style: bold text=shadow;
+    font-size: 20px;
+    color:black 
+    
+}
+
+/* Esto modifica el Main*/
+
+.intro {
+    color: white;
+    text-shadow: 2px;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 100px;
+    background-position: center
+}
+
+.body {
+    background-image: url(../assets/img/realidad-virtual.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Aca comienza la seccion Realidad Virtual*/
+
+.realidadvirtual {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo-realidadvirtual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-realidadvirtual {
+    background-image: url(../assets/img/Realidad\ virtual\ .jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.texto-realidadvirtual {
+    color: white;
+    text-shadow: 2px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.oculus {
+    margin-top: 100px;
+    margin-block-end: 100px;
+}
+
+
+
+/*Aca comienza Blockchain*/
+
+.blockchain {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo-blockchain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-blockchain {
+    color: white;
+    text-shadow: 2px;
+    background-image: url(../assets/img/BLOCKCHAIN.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Aca comienza NFTS*/
+
+.nfts {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo-nfts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-nfts {
+    color: white;
+    text-shadow: 2px;
+    background-image: url(../assets/img/nft\ conciertos.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Aca empieza Gaming */
+
+.gaming {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo-gaming {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-gaming {
+    background-image: url(../assets/img/gaming.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.texto-gaming {
+    color: white;
+    text-shadow: 2px;
+    background-image: url(../assets/img/gaming.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Esto modifica el Footer*/
+
+.footer {
+    list-style: none;
+}
+
+.footer .direccion {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 140px;
+    padding: 0px 10px;
+
+}
+
+.footer .rrss {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 140px;
+    padding: 0px 10px;
+
+}
