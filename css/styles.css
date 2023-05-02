@@ -53,7 +53,6 @@ header {
     font-style: bold text=shadow;
     font-size: 20px;
     color:black 
-    
 }
 
 /* Esto modifica el Main*/
@@ -66,16 +65,13 @@ header {
     margin-left: 200px;
     margin-top: 200px;
     background-position: center
-    
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(5 1fr);
     grid-template-rows: auto;
-
 }
-
 
 .container-cards {
     display: grid;
