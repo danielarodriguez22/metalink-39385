@@ -19,40 +19,12 @@ background-size: cover;
 background-attachment: fixed;
 }
 
-.slider {
+.grid {
     background-image: url(../assets/img/realidad-virtual.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-
-/* Esto modifica Barra de Navegacion*/
-
-header {
-    width: 100%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    height: 140px;
-    padding-right: 20px;
-}
-
-header {
-    position: sticky;
-    top: 0;
-}
-
-.header .nav-links {
-    display: flex;
-    flex-direction: row;
-    gap: 120px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    text-decoration: none;
-    font-style: bold text=shadow;
-    font-size: 30px;
-    color:black 
 }
 
 /* Esto modifica el Main*/
@@ -111,136 +83,112 @@ header {
     grid-row-end: 2;
 }
 
-.body {
-    background-image: url(../assets/img/realidad-virtual.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 /*Aca comienza la seccion Realidad Virtual*/
 
-.realidadvirtual {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.logo-realidadvirtual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.body-realidadvirtual {
-    background-image: url(../assets/img/Realidad\ virtual\ .jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 .texto-realidadvirtual {
+    position: relative;
     color: white;
-    text-shadow: 2px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    text-align: center;
+}
+
+.realidadvirtual {
+    position: relative;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .oculus {
-    margin-top: 100px;
-    margin-block-end: 100px;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
 
 /*Aca comienza Blockchain*/
 
-.blockchain {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.logo-blockchain {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .texto-blockchain {
     color: white;
+    font-size: 20px;
     text-shadow: 2px;
     background-image: url(../assets/img/BLOCKCHAIN.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-
-/*Aca comienza NFTS*/
-
-.nfts {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.logo-nfts {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+    text-align: center;
+    height: 100vh;
+  }
+  
+/*Aca comienza NFTS*/
 
 .texto-nfts {
     color: white;
+    font-size: 20px;
     text-shadow: 2px;
-    background-image: url(../assets/img/nft\ conciertos.jpeg);
+    background-image: url(../assets/img/nft\ conciertos.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
 }
 
 /*Aca empieza Gaming */
 
-.gaming {
+.texto-gaming {
+    background-image: url(../assets/img/gaming.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-}
-
-.logo-gaming {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.body-gaming {
-    background-image: url(../assets/img/gaming.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.texto-gaming {
+    text-align: center;
+    padding: 20px;
     color: white;
-    font-size: 21px;
-    text-shadow: 2px;
-    background-image: url(../assets/img/gaming.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    font-size: 20px;
 }
+
+.texto-gaming section {
+    position: relative;
+    z-index: 1;
+}
+
+.texto-gaming p {
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.texto-gaming img {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 
 /*Esto modifica el Footer*/
 
