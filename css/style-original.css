@@ -1,35 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'montserrat';
+    font-family: 'Montserrat';
     text-decoration: none;
     font-size: 18;
     list-style: none;
-}
+} */
 
-.index {
+/* .index {
 
     background-image: url(../assets/img/Slider.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
+} */
 
-.grid {
+/* .grid {
     background-image: url(../assets/img/realidad-virtual.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
+} */
 
 /* Esto modifica el Main*/
 
-.intro {
+/* .intro {
     color: white;
     text-shadow: 2px;
     font-size: 20px;
@@ -77,11 +77,11 @@
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
-}
+} */
 
 /*Aca comienza la seccion Realidad Virtual*/
 
-.texto-realidadvirtual {
+/* .texto-realidadvirtual {
     position: relative;
     color: white;
     text-align: center;
@@ -110,11 +110,11 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 /*Aca comienza Blockchain*/
 
-.texto-blockchain {
+/* .texto-blockchain {
     color: white;
     font-size: 20px;
     text-shadow: 2px;
@@ -129,15 +129,15 @@
     align-items: center;
     text-align: center;
     height: 100vh;
-}
+} */
 
 /*Aca comienza NFTS*/
 
-.texto-nfts {
+/* .texto-nfts {
     color: white;
     font-size: 20px;
     text-shadow: 2px;
-    background-image: url(../assets/img/nft\ conciertos.jpg);
+    background-image: url(../assets/img/nft_conciertos.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -148,10 +148,10 @@
     align-items: center;
     text-align: center;
     height: 100vh;
-}
+} */
 
 /*Aca empieza Gaming */
-
+/* 
 .texto-gaming {
     background-image: url(../assets/img/gaming.jpg);
     background-position: center;
@@ -180,24 +180,24 @@
 .texto-gaming img {
     max-width: 500px;
     margin: 0 auto;
-}
+} */
 
 
 /*Esto modifica el Footer*/
 
-.grid-container {
+/* .grid-container {
     background-color: white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1 rem;
-}
+    gap: 1rem;
+} */
 
-.footer .grid-container {
+/* .footer .grid-container {
     display: flex;
     justify-content: space-between;
-}
+} */
 
-.direccion {
+/* .direccion {
     margin-top: 30px;
     grid-column: 1/2;
 }
@@ -215,7 +215,7 @@
 
 .footer a {
     text-decoration: none;
-}
+} */
 
 
 /* Media query para pantalla desktop realidad virtual */
