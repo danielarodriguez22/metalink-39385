@@ -1,4 +1,4 @@
-# metalink-39385
+# Metalink
 Descripción
 
 Metalink es un revolucionario universo virtual que impulsa el desarrollo a gran escala del comercio electrónico y brinda una experiencia inmersiva. Integrando tecnologías como Metaverso, Realidad Aumentada, Blockchain, NFT's, Gaming e Inteligencia Artificial, Metalink crea un entorno único y poderoso para el crecimiento y éxito de los negocios en línea.
