@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+  text-decoration: none;
+  font-size: 18;
+  list-style: none; }
+
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  background-image: url(../assets/img/realidadvr-index.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .grid .slider img {
+    width: 100vw; }
+  .grid .intro {
+    color: white;
+    text-shadow: 2px;
+    font-size: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 100px;
+    background-position: center; }
+  .grid .container-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 350px; }
+    .grid .container-cards .card1 {
+      grid-column: 2/3; }
+    .grid .container-cards .card2 {
+      grid-column: 3/4; }
+    .grid .container-cards .card3 {
+      grid-column: 4/5; }
+    .grid .container-cards .card4 {
+      grid-column: 5/6; }
+
+.texto-realidadvirtual {
+  position: relative;
+  color: white;
+  text-align: center;
+  background: url(../assets/img/realidadvr_vr.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .texto-realidadvirtual .content {
+    position: relative;
+    padding: 20px; }
+    .texto-realidadvirtual .content .botoncito {
+      font-weight: 900;
+      font-size: 18px;
+      color: #fff;
+      padding: 10px 40px 10px 40px;
+      border-radius: 5px;
+      backdrop-filter: blur(25px);
+      background-image: linear-gradient(to right, #1d88b9 0%, #2aaadd 50%, #53bcf9 100%);
+      border: 1px solid #2aaadd; }
+      .texto-realidadvirtual .content .botoncito:active {
+        transform: scale(0.985);
+        box-shadow: inset 2px 2px 3px #2aaadd99, inset 2px 2px 3px #31303099; }
+    .texto-realidadvirtual .content .oculus {
+      display: block;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto; }
+
+.texto-blockchain {
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px;
+  background-image: url(../assets/img/BLOCKCHAIN.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh; }
+
+.texto-nfts {
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px;
+  background-image: url(../assets/img/nft_conciertos.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh; }
+  .texto-nfts .botoncito {
+    font-weight: 900;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 40px 10px 40px;
+    border-radius: 5px;
+    backdrop-filter: blur(25px);
+    background-image: linear-gradient(to right, #1d88b9 0%, #2aaadd 50%, #53bcf9 100%);
+    border: 1px solid #2aaadd; }
+    .texto-nfts .botoncito:active {
+      transform: scale(0.985);
+      box-shadow: inset 2px 2px 3px #2aaadd99, inset 2px 2px 3px #31303099; }
+
+.texto-gaming {
+  background-image: url(../assets/img/gaming.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 20px; }
+  .texto-gaming section {
+    position: relative;
+    z-index: 1; }
+    .texto-gaming section img {
+      max-width: 500px;
+      margin: 0 auto; }
+
+.footer a {
+  text-decoration: none; }
+
+.footer .grid-container {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem; }
+  .footer .grid-container .direccion {
+    margin-top: 30px;
+    grid-column: 1/2; }
+  .footer .grid-container .rrss {
+    grid-column: 2/3; }
+    .footer .grid-container .rrss p {
+      font-size: 18px;
+      font-weight: 800;
+      display: flex;
+      flex-direction: row-reverse;
+      padding-right: 10px; }
+    .footer .grid-container .rrss .iconos-rrss {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      text-align: start; }
