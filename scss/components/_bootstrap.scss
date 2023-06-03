@@ -12,9 +12,7 @@ body {
                     ul {
                         &.navbar-nav {
                             &.mx-auto {
-                                @include media-breakpoint-down(sm) {
-                                    justify-content: center;
-                                }
+
                             }
                         }
                     }

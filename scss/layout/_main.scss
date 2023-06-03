@@ -12,32 +12,43 @@
     width: 100vw;
   }
   .intro {
-    color: white;
-    text-shadow: 2px;
-    font-size: 20px;
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-top: 100px;
-    background-position: center
+    p{
+      color: white;
+      text-shadow: 2px;
+      font-size: 20px;
+      margin: 30px;
+      background-position: center;
+      transition: all 0.5s;
+    }
+
   }
   .container-cards {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 350px;
-    
-    .card1, .card2, .card3, .card4 {
-    grid-row: 1/2;
+    grid-template-rows: 270px;
+    align-items: center;
+    justify-content: center;
+
+    .tarjetas{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      grid-row: 1/2;
     }
     .card1 {
+      @extend .tarjetas;
       grid-column: 2/3;
     }
     .card2 {
+      @extend .tarjetas;
       grid-column: 3/4;
     }
     .card3 {
+      @extend .tarjetas;
         grid-column: 4/5;
     }
     .card4 {
+      @extend .tarjetas;
         grid-column: 5/6;
     }
   }

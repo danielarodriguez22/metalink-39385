@@ -1,15 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   text-decoration: none;
   font-size: 18;
   list-style: none;
 }
-
 
 .grid {
   display: grid;
@@ -21,39 +19,39 @@
   background-size: cover;
   background-attachment: fixed;
 }
-
 .grid .slider img {
   width: 100vw;
 }
-
-.grid .intro {
+.grid .intro p {
   color: white;
   text-shadow: 2px;
   font-size: 20px;
-  margin-right: 100px;
-  margin-left: 100px;
-  margin-top: 100px;
+  margin: 30px;
   background-position: center;
+  transition: all 0.5s;
 }
-
 .grid .container-cards {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 350px;
+  grid-template-rows: 270px;
+  align-items: center;
+  justify-content: center;
 }
-
+.grid .container-cards .tarjetas, .grid .container-cards .card4, .grid .container-cards .card3, .grid .container-cards .card2, .grid .container-cards .card1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row: 1/2;
+}
 .grid .container-cards .card1 {
   grid-column: 2/3;
 }
-
 .grid .container-cards .card2 {
   grid-column: 3/4;
 }
-
 .grid .container-cards .card3 {
   grid-column: 4/5;
 }
-
 .grid .container-cards .card4 {
   grid-column: 5/6;
 }
@@ -68,12 +66,10 @@
   background-size: cover;
   background-attachment: fixed;
 }
-
 .texto-realidadvirtual .content {
   position: relative;
   padding: 20px;
 }
-
 .texto-realidadvirtual .content .botoncito {
   font-weight: 900;
   font-size: 18px;
@@ -84,12 +80,10 @@
   background-image: linear-gradient(to right, #1d88b9 0%, #2aaadd 50%, #53bcf9 100%);
   border: 1px solid #2aaadd;
 }
-
 .texto-realidadvirtual .content .botoncito:active {
   transform: scale(0.985);
-  box-shadow: inset 2px 2px 3px #2aaadd99, inset 2px 2px 3px #31303099;
+  box-shadow: inset 2px 2px 3px rgba(42, 170, 221, 0.6), inset 2px 2px 3px rgba(49, 48, 48, 0.6);
 }
-
 .texto-realidadvirtual .content .oculus {
   display: block;
   margin-top: 20px;
@@ -99,7 +93,7 @@
   height: auto;
 }
 
-.texto-blockchain {
+.texto-blockchain, .texto-nfts {
   color: white;
   font-size: 20px;
   text-shadow: 2px;
@@ -110,29 +104,15 @@
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
+  flex-wrap: center;
   justify-content: center;
   align-items: center;
-  text-align: center;
   height: 100vh;
 }
 
 .texto-nfts {
-  color: white;
-  font-size: 20px;
-  text-shadow: 2px;
   background-image: url(../assets/img/nft_conciertos.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
 }
-
 .texto-nfts .botoncito {
   font-weight: 900;
   font-size: 18px;
@@ -143,10 +123,9 @@
   background-image: linear-gradient(to right, #1d88b9 0%, #2aaadd 50%, #53bcf9 100%);
   border: 1px solid #2aaadd;
 }
-
 .texto-nfts .botoncito:active {
   transform: scale(0.985);
-  box-shadow: inset 2px 2px 3px #2aaadd99, inset 2px 2px 3px #31303099;
+  box-shadow: inset 2px 2px 3px rgba(42, 170, 221, 0.6), inset 2px 2px 3px rgba(49, 48, 48, 0.6);
 }
 
 .texto-gaming {
@@ -157,25 +136,22 @@
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
+  flex-wrap: center;
   justify-content: center;
   align-items: center;
-  text-align: center;
   padding: 20px;
   color: white;
   font-size: 20px;
 }
-
 .texto-gaming section {
   position: relative;
   z-index: 1;
 }
-
 .texto-gaming section img {
   max-width: 500px;
   margin: 0 auto;
 }
-
-.avatar {
+.texto-gaming .avatar {
   display: block;
   margin-top: 20px;
   margin-left: auto;
@@ -187,23 +163,19 @@
 .footer a {
   text-decoration: none;
 }
-
 .footer .grid-container {
   background-color: white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
-
 .footer .grid-container .direccion {
   margin-top: 30px;
   grid-column: 1/2;
 }
-
 .footer .grid-container .rrss {
   grid-column: 2/3;
 }
-
 .footer .grid-container .rrss p {
   font-size: 18px;
   font-weight: 800;
@@ -211,10 +183,414 @@
   flex-direction: row-reverse;
   padding-right: 10px;
 }
-
 .footer .grid-container .rrss .iconos-rrss {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   text-align: start;
 }
+
+body header nav .navbar-brand img {
+  max-width: 100%;
+}
+@media (max-width: 1024px) {
+  .grid .slider img {
+    width: 100vw;
+  }
+  .grid .intro p {
+    font-size: 16px;
+    transition: all 0.5s;
+  }
+  .grid .container-cards {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 185px;
+  }
+  .grid .container-cards .card1,
+  .grid .container-cards .card2,
+  .grid .container-cards .card3,
+  .grid .container-cards .card4 {
+    grid-row: 1/2;
+  }
+  .grid .container-cards .card1 img,
+  .grid .container-cards .card2 img,
+  .grid .container-cards .card3 img,
+  .grid .container-cards .card4 img {
+    width: 150px;
+    transition: all 0.5s;
+  }
+  .grid .container-cards .card1 {
+    grid-column: 1/2;
+  }
+  .grid .container-cards .card2 {
+    grid-column: 2/3;
+  }
+  .grid .container-cards .card3 {
+    grid-column: 3/4;
+  }
+  .grid .container-cards .card4 {
+    grid-column: 4/5;
+  }
+  .texto-realidadvirtual {
+    position: relative;
+    color: white;
+    text-align: center;
+    background: url(../assets/img/realidadvr_vr.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .texto-realidadvirtual .content {
+    position: relative;
+    padding: 20px;
+  }
+  .texto-realidadvirtual .content .botoncito {
+    font-weight: 900;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 5px;
+    backdrop-filter: blur(25px);
+    background-image: linear-gradient(to right, #1d88b9 0%, #2aaadd 50%, #53bcf9 100%);
+    border: 1px solid #2aaadd;
+  }
+  .texto-realidadvirtual .content .botoncito:active {
+    transform: scale(0.985);
+    box-shadow: inset 2px 2px 3px rgba(42, 170, 221, 0.6), inset 2px 2px 3px rgba(49, 48, 48, 0.6);
+  }
+  .texto-realidadvirtual .content .oculus {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  .texto-blockchain p, .texto-nfts p {
+    color: white;
+    font-size: 14px;
+    text-shadow: 2px;
+    background-image: url(../assets/img/BLOCKCHAIN.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .texto-nfts {
+    background-image: url(../assets/img/nft_conciertos.jpg);
+  }
+  .texto-nfts .botoncito {
+    font-weight: 900;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 5px;
+    backdrop-filter: blur(25px);
+    background-image: linear-gradient(to right, #1d88b9 0%, #2aaadd 50%, #53bcf9 100%);
+    border: 1px solid #2aaadd;
+  }
+  .texto-nfts .botoncito:active {
+    transform: scale(0.985);
+    box-shadow: inset 2px 2px 3px rgba(42, 170, 221, 0.6), inset 2px 2px 3px rgba(49, 48, 48, 0.6);
+  }
+  .texto-gaming {
+    background-image: url(../assets/img/gaming.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+  }
+  .texto-gaming section {
+    position: relative;
+    z-index: 1;
+  }
+  .texto-gaming section img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .avatar {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .grid .slider img {
+    width: 100vw;
+  }
+  .texto-realidadvirtual {
+    position: relative;
+    color: white;
+    text-align: center;
+    background: url(../assets/img/realidadvr_vr.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .texto-realidadvirtual .content {
+    position: relative;
+    padding: 20px;
+  }
+  .texto-realidadvirtual .content .botoncito {
+    font-weight: 900;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 5px;
+    backdrop-filter: blur(25px);
+    background-image: linear-gradient(to right, #1d88b9 0%, #2aaadd 50%, #53bcf9 100%);
+    border: 1px solid #2aaadd;
+  }
+  .texto-realidadvirtual .content .botoncito:active {
+    transform: scale(0.985);
+    box-shadow: inset 2px 2px 3px rgba(42, 170, 221, 0.6), inset 2px 2px 3px rgba(49, 48, 48, 0.6);
+  }
+  .texto-realidadvirtual .content .oculus {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  .texto-blockchain, .texto-nfts {
+    color: white;
+    font-size: 14px;
+    text-shadow: 2px;
+    background-image: url(../assets/img/BLOCKCHAIN.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .texto-nfts {
+    background-image: url(../assets/img/nft_conciertos.jpg);
+  }
+  .texto-nfts .botoncito {
+    font-weight: 900;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 5px;
+    backdrop-filter: blur(25px);
+    background-image: linear-gradient(to right, #1d88b9 0%, #2aaadd 50%, #53bcf9 100%);
+    border: 1px solid #2aaadd;
+  }
+  .texto-nfts .botoncito:active {
+    transform: scale(0.985);
+    box-shadow: inset 2px 2px 3px rgba(42, 170, 221, 0.6), inset 2px 2px 3px rgba(49, 48, 48, 0.6);
+  }
+  .texto-gaming {
+    background-image: url(../assets/img/gaming.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+  }
+  .texto-gaming section {
+    position: relative;
+    z-index: 1;
+  }
+  .texto-gaming section img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .avatar {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .grid .container-cards .card1 img,
+  .grid .container-cards .card2 img,
+  .grid .container-cards .card3 img,
+  .grid .container-cards .card4 img {
+    width: 120px;
+    transition: all 0.5s;
+  }
+}
+@media (max-width: 320px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background-image: url(../assets/img/realidadvr-index.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .grid .slider img {
+    width: 100vw;
+  }
+  .grid .intro {
+    color: white;
+    text-shadow: 2px;
+    font-size: 14px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-position: center;
+  }
+  .grid .container-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 200px;
+  }
+  .grid .container-cards .card1,
+  .grid .container-cards .card2,
+  .grid .container-cards .card3,
+  .grid .container-cards .card4 {
+    grid-row: 1/2;
+  }
+  .grid .container-cards .card1 {
+    grid-column: 2/3;
+  }
+  .grid .container-cards .card2 {
+    grid-column: 3/4;
+  }
+  .grid .container-cards .card3 {
+    grid-column: 4/5;
+  }
+  .grid .container-cards .card4 {
+    grid-column: 5/6;
+  }
+  .texto-realidadvirtual {
+    position: relative;
+    color: white;
+    text-align: center;
+    background: url(../assets/img/realidadvr_vr.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .texto-realidadvirtual .content {
+    position: relative;
+    padding: 20px;
+  }
+  .texto-realidadvirtual .content .botoncito {
+    font-weight: 900;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    backdrop-filter: blur(25px);
+    background-image: linear-gradient(to right, #1d88b9 0%, #2aaadd 50%, #53bcf9 100%);
+    border: 1px solid #2aaadd;
+  }
+  .texto-realidadvirtual .content .botoncito:active {
+    transform: scale(0.985);
+    box-shadow: inset 2px 2px 3px rgba(42, 170, 221, 0.6), inset 2px 2px 3px rgba(49, 48, 48, 0.6);
+  }
+  .texto-realidadvirtual .content .oculus {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  .texto-blockchain, .texto-nfts {
+    color: white;
+    font-size: 14px;
+    text-shadow: 2px;
+    background-image: url(../assets/img/BLOCKCHAIN.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .texto-nfts {
+    background-image: url(../assets/img/nft_conciertos.jpg);
+  }
+  .texto-nfts .botoncito {
+    font-weight: 900;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    backdrop-filter: blur(25px);
+    background-image: linear-gradient(to right, #1d88b9 0%, #2aaadd 50%, #53bcf9 100%);
+    border: 1px solid #2aaadd;
+  }
+  .texto-nfts .botoncito:active {
+    transform: scale(0.985);
+    box-shadow: inset 2px 2px 3px rgba(42, 170, 221, 0.6), inset 2px 2px 3px rgba(49, 48, 48, 0.6);
+  }
+  .texto-gaming {
+    background-image: url(../assets/img/gaming.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+  }
+  .texto-gaming section {
+    position: relative;
+    z-index: 1;
+  }
+  .texto-gaming section img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .avatar {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

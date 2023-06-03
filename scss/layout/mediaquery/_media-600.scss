@@ -1,0 +1,15 @@
+@media (max-width: 600px) {
+  .grid {
+    .container-cards {
+      .card1,
+      .card2,
+      .card3,
+      .card4 {
+          img {
+              width: 120px;
+              transition: all 0.5s;
+          }
+      }
+    }
+  }
+}
