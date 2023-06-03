@@ -8,6 +8,7 @@
   font-size: 18;
   list-style: none; }
 
+
 .grid {
   display: grid;
   grid-template-columns: auto;
