@@ -1,0 +1,402 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    font-size: 18;
+    list-style: none;
+} */
+
+/* .index {
+
+    background-image: url(../assets/img/Slider.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+/* .grid {
+    background-image: url(../assets/img/realidad-virtual.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+/* Esto modifica el Main*/
+
+/* .intro {
+    color: white;
+    text-shadow: 2px;
+    font-size: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 100px;
+    background-position: center
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5 1fr);
+    grid-template-rows: auto;
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr
+}
+
+.card1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.card2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.card3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.card4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+} */
+
+/*Aca comienza la seccion Realidad Virtual*/
+
+/* .texto-realidadvirtual {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.realidadvirtual {
+    background:url(../assets/img/realidad_virtual.jpg)
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    padding: 20px;
+}
+
+.oculus {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+/*Aca comienza Blockchain*/
+
+/* .texto-blockchain {
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px;
+    background-image: url(../assets/img/BLOCKCHAIN.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+} */
+
+/*Aca comienza NFTS*/
+
+/* .texto-nfts {
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px;
+    background-image: url(../assets/img/nft_conciertos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+} */
+
+/*Aca empieza Gaming */
+/* 
+.texto-gaming {
+    background-image: url(../assets/img/gaming.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.texto-gaming section {
+    position: relative;
+    z-index: 1;
+}
+
+.texto-gaming p {
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.texto-gaming img {
+    max-width: 500px;
+    margin: 0 auto;
+} */
+
+
+/*Esto modifica el Footer*/
+
+/* .grid-container {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+} */
+
+/* .footer .grid-container {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* .direccion {
+    margin-top: 30px;
+    grid-column: 1/2;
+}
+
+.rrss {
+    grid-column: 2/3;
+}
+
+.iconos-rrss {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: start;
+}
+
+.footer a {
+    text-decoration: none;
+} */
+
+
+/* Media query para pantalla desktop realidad virtual */
+@media (max-width: 1024px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 1rem;
+    }
+
+    .navbar-brand {
+        margin-bottom: 1rem;
+    }
+
+    .texto-realidadvirtual {
+        text-align: center;
+    }
+
+    .oculus {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Media query para pantalla tablet realidad virtual */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 1rem;
+    }
+
+    .navbar-brand {
+        margin-bottom: 1rem;
+    }
+
+    .texto-realidadvirtual {
+        text-align: center;
+    }
+
+    .oculus {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Media query para pantalla movil realidad virtual */
+@media (max-width: 320px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 1rem;
+    }
+
+    .navbar-brand {
+        margin-bottom: 1rem;
+    }
+
+    .oculus {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .direccion,
+    .footer .rrss {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+/* Media query para pantalla desktop gaming */
+@media (max-width: 1024px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 1rem;
+    }
+
+    .navbar-brand {
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .texto-gaming img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .footer .direccion,
+    .footer .rrss {
+        grid-column: span 1;
+    }
+}
+
+/* Media query para pantalla tablet gaming */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 1rem;
+    }
+
+    .navbar-brand {
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .texto-gaming img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .footer .direccion,
+    .footer .rrss {
+        grid-column: span 1;
+    }
+}
+
+/* Media query para pantalla movil gaming */
+@media (max-width: 320px) {
+    .navbar-brand img {
+        max-width: 80px;
+    }
+
+    .navbar-brand a {
+        display: none;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-nav li {
+        margin-bottom: 10px;
+    }
+
+    .footer .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
