@@ -6,4 +6,7 @@
 @import "./layout/header";
 @import "./layout/main";
 @import "./layout/footer";
-@import "./layout/mediaquery/1024.scss"
+@import "./layout/mediaquery/1024.scss";
+@import "./layout/mediaquery/768.scss";
+@import "./layout/mediaquery/320.scss";
+@import "./components/bootstrap"

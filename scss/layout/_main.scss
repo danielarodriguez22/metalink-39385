@@ -88,29 +88,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  @include flex (column,center,center,center);
   height: 100vh;
 }
 // MAIN - NTFS
 .texto-nfts {
-  color: white;
-  font-size: 20px;
-  text-shadow: 2px;
+  @extend .texto-blockchain;
   background-image: $bg-nfts;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
   .botoncito{
     font-weight: 900;
     font-size: 18px;
@@ -133,11 +117,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  @include flex (column,center,center,center);
   padding: 20px;
   color: white;
   font-size: 20px;
