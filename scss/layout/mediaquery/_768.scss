@@ -1,0 +1,152 @@
+@media (max-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        background-image: $bg-indexsmall;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+        .slider img {
+            width: 100vw;
+        }
+
+        .intro {
+            color: white;
+            text-shadow: 2px;
+            font-size: 20px;
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-top: 50px;
+            background-position: center
+        }
+
+        .container-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 350px;
+
+            .card1,
+            .card2,
+            .card3,
+            .card4 {
+                grid-row: 1/2;
+            }
+
+            .card1 {
+                grid-column: 1/2;
+            }
+
+            .card2 {
+                grid-column: 2/3;
+            }
+
+            .card3 {
+                grid-column: 1/2;
+            }
+
+            .card4 {
+                grid-column: 2/3;
+            }
+        }
+    }
+
+    .texto-realidadvirtual {
+        position: relative;
+        color: white;
+        text-align: center;
+        background: $bg-vr;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+        .content {
+            position: relative;
+            padding: 20px;
+
+            .botoncito {
+                font-weight: 900;
+                font-size: 14px;
+                color: #fff;
+                padding: 10px 40px;
+                border-radius: 5px;
+                backdrop-filter: blur(25px);
+                background-image: linear-gradient(to right, #1d88b9 0%, #2aaadd 50%, #53bcf9 100%);
+                border: 1px solid #2aaadd;
+
+                &:active {
+                    transform: scale(0.985);
+                    box-shadow: inset 2px 2px 3px #2aaadd99, inset 2px 2px 3px #31303099;
+                }
+            }
+
+            .oculus {
+                display: block;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .texto-blockchain {
+        color: white;
+        font-size: 14px;
+        text-shadow: 2px;
+        background-image: $bg-bch;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        @include flex (column, center, center, center);
+        height: 100vh;
+    }
+
+    .texto-nfts {
+        @extend .texto-blockchain;
+        background-image: $bg-nfts;
+
+        .botoncito {
+            font-weight: 900;
+            font-size: 14px;
+            color: #fff;
+            padding: 10px 40px;
+            border-radius: 5px;
+            backdrop-filter: blur(25px);
+            background-image: linear-gradient(to right, #1d88b9 0%, #2aaadd 50%, #53bcf9 100%);
+            border: 1px solid #2aaadd;
+
+            &:active {
+                transform: scale(0.985);
+                box-shadow: inset 2px 2px 3px #2aaadd99, inset 2px 2px 3px #31303099;
+            }
+        }
+    }
+
+    .texto-gaming {
+        background-image: $bg-gaming;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        @include flex (column, center, center, center);
+        padding: 20px;
+        color: white;
+        font-size: 14px;
+
+        section {
+            position: relative;
+            z-index: 1;
+
+            img {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+}
