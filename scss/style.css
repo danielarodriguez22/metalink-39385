@@ -459,8 +459,7 @@ body header nav .navbar-brand img {
     height: 100vh;
   }
 
-  .texto-blockchain p,
-  .texto-nfts p {
+  .texto-blockchain p, .texto-nfts p {
     margin-left: 20px;
     margin-right: 20px;
   }
